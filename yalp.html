@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yalp</title>
+</head>
+<body>
+    <header  class="text-white relative">
+        <nav class="bg-gray-500  text-lg">
+            <div class=" justify-between items-center pt-10">
+                <div class="mx-auto w-full px-10">
+                    <ul class="w-full flex justify-between items-center mx-auto">
+                        <li class="px-2">Yalp<i></i></li>
+                        <li class="px-2">
+                            <input class="h-10 rounded " type="text">
+                            <select class="h-10 rounded ">
+                                <option class="text-black" value="location">Current Location</option>
+                                <option value="location"></option>
+                                <option value="location"></option>
+                            </select>
+                            <button class=" rounded bg-red-600 w-10 h-10 -ml-1 border border-red-600 " ><i class="fa fa-search"></i></button>
+                        </li>
+                        <div class="px-2 relative">
+                            <li class="font-bold">Yalp for Business <i class="fa fa-chevron-down"></i></li>
+                                <div class="scale-0 transform absolute">
+                                    <a href="#"><i></i> Add a Business</a>
+                                    <a href="#"><i></i> Claim your Business</a>
+                                    <a href="#"><i></i> Log in to Business Account</a>
+                                    <hr>
+                                    <a href="#"><i></i> Explore Yalp for Business</a>
+                                </div>
+                        </div>
+                        <li class="px-2 font-bold"><a href="">Write a Review</a></li>
+                        <li class="px-2 "><button class="h-10 font-bold border-2 border-white px-4 py-1 rounded">Log In</button></li>
+                        <li class="px-2 "><button class="font-bold h-10 bg-red-600 border-red-600 px-4 py-1 rounded">Sign Up</button></li>
+                    </ul> 
+                </div>
+                  
+                    
+                
+            </div>
+            
+            <ul class="flex ml-16 pl-16 pb-10 text-base">
+                    <div class="relative px-2">
+                        <li>Restaurants <i class="fa fa-chevron-down"></i></li>
+                        <ul class="grid grid-cols-2 scale-0 transform absolute">
+                            <li><a href="#"><i></i> Delivery</a></li>
+                            <li><a href="#"><i></i> Burgers</a></li>
+                            <li><a href="#"><i></i> Chinese</a></li>
+                            <li><a href="#"><i></i> Italian</a></li>
+                            <li><a href="#"><i></i> Reservations</a></li>
+                            <li><a href="#"><i></i> Japanese</a></li>
+                            <li><a href="#"><i></i> Mexican</a></li>
+                            <li><a href="#"><i></i> Thai</a></li>
+                        </ul>
+                    </div>
+                
+                    <div  class="relative px-2">
+                        <li>Home Services <i class="fa fa-chevron-down"></i></li>
+                        <ul class="grid grid-cols-2 scale-0 transform absolute">
+                            <li><a href="#"><i></i> Contractors</a></li>
+                            <li><a href="#"><i></i> Electricians</a></li>
+                            <li><a href="#"><i></i> Home Cleaners</a></li>
+                            <li><a href="#"><i></i> HVAC</a></li>
+                            <li><a href="#"><i></i> Landscaping</a></li>
+                            <li><a href="#"><i></i> Locksmiths</a></li>
+                            <li><a href="#"><i></i> Movers</a></li>
+                            <li><a href="#"><i></i> Plumbers</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="relative px-2">
+                        <li>Auto Services <i class="fa fa-chevron-down"></i></li>
+                        <ul class="grid grid-cols-2 scale-0 transform absolute">
+                            <li><a href="#"><i></i> Auto Repair</a></li>
+                            <li><a href="#"><i></i> Auto Detailing</a></li>
+                            <li><a href="#"><i></i> Body Shops</a></li>
+                            <li><a href="#"><i></i> Car Wash</a></li>
+                            <li><a href="#"><i></i> Car Dealers</a></li>
+                            <li><a href="#"><i></i> Oil Change</a></li>
+                            <li><a href="#"><i></i> Parking</a></li>
+                            <li><a href="#"><i></i> Towing</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="relative px-2">
+                        <li>More <i class="fa fa-chevron-down"></i></li>
+                        <ul class="grid grid-cols-2 scale-0 transform absolute">
+                            <li><a href="#"><i></i> Dry Cleaning</a></li>
+                            <li><a href="#"><i></i> Phone Repair</a></li>
+                            <li><a href="#"><i></i> Bars</a></li>
+                            <li><a href="#"><i></i> Night Life</a></li>
+                            <li><a href="#"><i></i> Hair Salons</a></li>
+                            <li><a href="#"><i></i> Gym</a></li>
+                            <li><a href="#"><i></i> Massage</a></li>
+                            <li><a href="#"><i></i> Things to Do</a></li>
+                        </ul>
+                </div>
+            </ul>
+            
+        </nav>
+        <div style="background-image: url(./Img/bedroom.jpg);" class="-z-10 absolute top-0 left-0 w-full h-10 bg-cover bg-no-repeat bg-center">
+                
+        </div>
+    </header>
+    <main>
+        <section class="text-center">
+            <h2 class="text-3xl font-bold my-10">Recent Activity</h2>
+            <div>
+                <div class="main-container">
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="text-center mb-10">
+            <h2 class="text-3xl font-bold my-10">Categories</h2>
+            <div class="grid grid-cols-4  w-9/12 mx-auto gap-10 ">
+                
+                        <a class=" border border-gray w-52 h-48  border rounded hover:shadow shadow-black" href="">
+                            <div class="flex w-full h-full flex-col justify-center items-center">
+                                <div class="mb-6">
+                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                </div> 
+                                <p class="block text-lg font-semibold">Restaurants</p>
+                            </div>
+                        </a>
+                   
+           
+                        <a class="border border-gray w-52 h-48  border rounded hover:shadow-lg shadow-black" href="">
+                            <div class="flex w-full h-full flex-col justify-center items-center">
+                                <div class="mb-6">
+                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#dc2626" d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z"/></svg>
+                                </div>
+                                <p class="text-lg font-semibold">Shopping</p>
+                            </div>
+                        </a>
+                  
+                        <a class="border border-gray w-52 h-48  border rounded hover:shadow-lg shadow-black" href="">
+                            <div class="flex w-full h-full flex-col justify-center items-center">
+                                <div class="mb-6">
+                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144.7 98.7c-21 34.1-33.1 74.3-33.1 117.3c0 98 62.8 181.4 150.4 211.7c-12.4 2.8-25.3 4.3-38.6 4.3C126.6 432 48 353.3 48 256c0-68.9 39.4-128.4 96.8-157.3zm62.1-66C91.1 41.2 0 137.9 0 256C0 379.7 100 480 223.5 480c47.8 0 92-15 128.4-40.6c1.9-1.3 3.7-2.7 5.5-4c4.8-3.6 9.4-7.4 13.9-11.4c2.7-2.4 5.3-4.8 7.9-7.3c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-3.7 .6-7.4 1.2-11.1 1.6c-5 .5-10.1 .9-15.3 1c-1.2 0-2.5 0-3.7 0c-.1 0-.2 0-.3 0c-96.8-.2-175.2-78.9-175.2-176c0-54.8 24.9-103.7 64.1-136c1-.9 2.1-1.7 3.2-2.6c4-3.2 8.2-6.2 12.5-9c3.1-2 6.3-4 9.6-5.8c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-3.6-.3-7.1-.5-10.7-.6c-2.7-.1-5.5-.1-8.2-.1c-3.3 0-6.5 .1-9.8 .2c-2.3 .1-4.6 .2-6.9 .4z"/></svg>
+                                </div>
+                                <p class="text-lg font-semibold">Nightlife</p>
+                            </div>
+                        </a>
+                  
+                        <a class="border border-gray w-52 h-48  border rounded hover:shadow-lg shadow-black" href="">
+                            <div class="flex w-full h-full flex-col justify-center items-center">
+                                <div class="mb-6">
+                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#dc2626" d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                                </div>
+                                <p class="text-lg font-semibold">Active Life</p>
+                            </div>
+                        </a>
+                   
+                        <a class="border border-gray w-52 h-48  border rounded hover:shadow-lg shadow-black" href="">
+                            <div class="flex w-full h-full flex-col justify-center items-center">
+                                <div class="mb-6">
+                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#dc2626" d="M183.1 235.3c33.7 20.7 62.9 48.1 85.8 80.5c7 9.9 13.4 20.3 19.1 31c5.7-10.8 12.1-21.1 19.1-31c22.9-32.4 52.1-59.8 85.8-80.5C437.6 207.8 490.1 192 546 192h9.9c11.1 0 20.1 9 20.1 20.1C576 360.1 456.1 480 308.1 480H288 267.9C119.9 480 0 360.1 0 212.1C0 201 9 192 20.1 192H30c55.9 0 108.4 15.8 153.1 43.3zM301.5 37.6c15.7 16.9 61.1 71.8 84.4 164.6c-38 21.6-71.4 50.8-97.9 85.6c-26.5-34.8-59.9-63.9-97.9-85.6c23.2-92.8 68.6-147.7 84.4-164.6C278 33.9 282.9 32 288 32s10 1.9 13.5 5.6z"/></svg>
+                                </div>
+                                <p class="text-lg font-semibold">Beauty & Spas</p>
+                            </div>
+                        </a>
+             
+              
+                        <a class="border border-gray w-52 h-48  border rounded hover:shadow-lg shadow-black" href="">
+                            <div class="flex w-full h-full flex-col justify-center items-center">
+                                <div class="mb-6">
+                                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                                </div>
+                                <p class="text-lg font-semibold">Automotive</p>
+                            </div>
+                        </a>
+                
+               
+                        <a class="border border-gray w-52 h-48  border rounded hover:shadow-lg shadow-black" href="">
+                            <div class="flex w-full h-full flex-col justify-center items-center">
+                                <div class="mb-6">
+                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                                </div>
+                                <p class="text-lg font-semibold">Home Services</p>
+                            </div>
+                        </a>
+                   
+               
+                        <a class="border border-gray w-52 h-48  border rounded hover:shadow-lg shadow-black" href="">
+                            <div class="flex w-full h-full flex-col justify-center items-center">
+                                <div class="mb-6">
+                                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
+                                </div>
+                                <p class="text-lg font-semibold">More</p>
+                            </div>
+                        </a>
+                 
+            </div>
+        </section>
+        <footer class="mt-12 bg-gray-100 pt-10">
+            <div class="grid grid-cols-4 w-9/12 m-auto mt-5 gap-10">
+                <div>
+                    <h2 class="font-bold text-lg mb-4">About</h2>
+                    <ul>
+                        <li class="my-1 hover:underline"><a href="">About Yalp</a></li>
+                        <li class="my-1 hover:underline"><a href="">Careers</a></li>
+                        <li class="my-1 hover:underline"><a href="">Press</a></li>
+                        <li class="my-1 hover:underline"><a href="">Investor Relations</a></li>
+                        <li class="my-1 hover:underline"><a href="">Trust & Safety</a></li>
+                        <li class="my-1 hover:underline"><a href="">Content Guidelines</a></li>
+                        <li class="my-1 hover:underline"><a href="">Accessibility Statement</a></li>
+                        <li class="my-1 hover:underline"><a href="">Terms of Service</a></li>
+                        <li class="my-1 hover:underline"><a href="">Privacy Policy</a></li>
+                        <li class="my-1 hover:underline"><a href="">Ad Choices</a></li>
+                        <li class="my-1 hover:underline"><a href="">Your Privacy Choices</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-bold text-lg mb-4">Discover</h2>
+                    <ul>
+                        <li class="my-1 hover:underline"><a href="">Yalp Project Cost Guides</a></li>
+                        <li class="my-1 hover:underline"><a href="">Collections</a></li>
+                        <li class="my-1 hover:underline"><a href="">Talk</a></li>
+                        <li class="my-1 hover:underline"><a href="">Events</a></li>
+                        <li class="my-1 hover:underline"><a href="">Yalp Blog</a></li>
+                        <li class="my-1 hover:underline"><a href="">Support</a></li>
+                        <li class="my-1 hover:underline"><a href="">Yalp Mobile</a></li>
+                        <li class="my-1 hover:underline"><a href="">Developers</a></li>
+                        <li class="my-1 hover:underline"><a href="">RSS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-bold text-lg mb-4">Yalp for Business</h2>
+                    <ul>
+                        <li class="my-1 hover:underline"><a href="">Yalp for Business</a></li>
+                        <li class="my-1 hover:underline"><a href="">Business Owner Login</a></li>
+                        <li class="my-1 hover:underline"><a href="">Claim your Business Page</a></li>
+                        <li class="my-1 hover:underline"><a href="">Advertise on Yalp</a></li>
+                        <li class="my-1 hover:underline"><a href="">Yalp for Restaurant Owners</a></li>
+                        <li class="my-1 hover:underline"><a href="">Table Management</a></li>
+                        <li class="my-1 hover:underline"><a href="">Business Success Stories</a></li>
+                        <li class="my-1 hover:underline"><a href="">Business Support</a></li>
+                        <li class="my-1 hover:underline"><a href="">Yalp Blog for Business</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="mb-3">
+                        <label for="langauges"  class="block text-lg font-bold">Languages</label>
+                        <select class="my-1 -ml-1" name="langauges" id="langauges">
+                            <option class="my-1" value="langauge">Bahasa Malaysia (Malaysia)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Čeština (Česká republika)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Dansk (Danmark)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Deutsch (Deutschland)</option>
+                            <option class="my-1" value="langauge">Deutsch (Österreich)</option>
+                            <option class="my-1" value="langauge">Deutsch (Schweiz)</option>
+                            <hr>
+                            <option class="my-1" value="langauge" disabled selected>English</option>
+                            <option class="my-1" value="langauge">English (Australia)</option>
+                            <option class="my-1" value="langauge">English (Belgium)</option>
+                            <option class="my-1" value="langauge">English (Canada)</option>
+                            <option class="my-1" value="langauge">English (Hong Kong)</option>
+                            <option class="my-1" value="langauge">English (Malaysia)</option>
+                            <option class="my-1" value="langauge">English (New Zealand)</option>
+                            <option class="my-1" value="langauge">English (Philippines)</option>
+                            <option class="my-1" value="langauge">English (Republic of Ireland)</option>
+                            <option class="my-1" value="langauge">English (Singapore)</option>
+                            <option class="my-1" value="langauge">English (Switzerland)</option>
+                            <option class="my-1" value="langauge">English (United Kingdom)</option>
+                            <option class="my-1" value="langauge">English (United States)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Español (Argentina)</option>
+                            <option class="my-1" value="langauge">Español (Chile)</option>
+                            <option class="my-1" value="langauge">Español (España)</option>
+                            <option class="my-1" value="langauge">Español (México)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Filipino (Pilipinas)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Français (Belgique)</option>
+                            <option class="my-1" value="langauge">Français (Canada)</option>
+                            <option class="my-1" value="langauge">Français (France)</option>
+                            <option class="my-1" value="langauge">Français (Suisse)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Italiano (Italia)</option>
+                            <option class="my-1" value="langauge">Italiano (Svizzera)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Nederlands (België)</option>
+                            <option class="my-1" value="langauge">Nederlands (Nederland)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Norsk (Norge)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Polski (Polska)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Português (Brasil)</option>
+                            <option class="my-1" value="langauge">Português (Portugal)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Suomi (Suomi)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Svenska (Finland)</option>
+                            <option class="my-1" value="langauge">Svenska (Sverige)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">Türkçe (Türkiye)</option>
+                            <hr>
+                            <option class="my-1" value="langauge">日本語 (日本)</option>
+                            <hr>
+                            <!-- I need to find the correct format for the last two options -->
+                            <option class="my-1" value="langauge">中文</option>
+                            <option class="my-1" value="langauge">中文</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="countries" class="block text-lg font-bold">Countries</label>
+                        <select class="my-1 -ml-1" name="countries" id="countries">
+                            <option class="my-1" value="country">Argentina</option>
+                            <option class="my-1" value="country">Australia</option>
+                            <option class="my-1" value="country">Austria</option>
+                            <option class="my-1" value="country">Belgium</option>
+                            <option class="my-1" value="country">Brazil</option>
+                            <option class="my-1" value="country">Canada</option>
+                            <option class="my-1" value="country">Chile</option>
+                            <option class="my-1" value="country">Czech Republic</option>
+                            <option class="my-1" value="country">Denmark</option>
+                            <option class="my-1" value="country">Finland</option>
+                            <option class="my-1" value="country">France</option>
+                            <option class="my-1" value="country">Germany</option>
+                            <option class="my-1" value="country">Hong Kong</option>
+                            <option class="my-1" value="country">Italy</option>
+                            <option class="my-1" value="country">Japan</option>
+                            <option class="my-1" value="country">Malaysia</option>
+                            <option class="my-1" value="country">Mexico</option>
+                            <option class="my-1" value="country">New Zealand</option>
+                            <option class="my-1" value="country">Norway</option>
+                            <option class="my-1" value="country">Philippines</option>
+                            <option class="my-1" value="country">Poland</option>
+                            <option class="my-1" value="country">Portugal</option>
+                            <option class="my-1" value="country">Republic of Ireland</option>
+                            <option class="my-1" value="country">Singapore</option>
+                            <option class="my-1" value="country">Spain</option>
+                            <option class="my-1" value="country">Sweden</option>
+                            <option class="my-1" value="country">Switzerland</option>
+                            <option class="my-1" value="country">Taiwan</option>
+                            <option class="my-1" value="country">The Netherlands</option>
+                            <option class="my-1" value="country">Turkey</option>
+                            <option class="my-1" value="country">United Kingdom</option>
+                            <option class="my-1" value="country" selected>United States</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p>Copyright &#169; 2004-2024 Yalp Inc. Yalp, Yalp I, I and related marks are regstered trademarks of Yalp.</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
