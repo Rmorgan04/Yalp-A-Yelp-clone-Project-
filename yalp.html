@@ -13,28 +13,30 @@
         <div class="absolute text-3xl font-bold" style="top: 4.5%; left: 42px">yalp</div>
         <div class="absolute"  style="top: 5.5%; left: 99px"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="30px" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M42.9 240.3l99.6 48.6c19.2 9.4 16.2 37.5-4.5 42.7L30.5 358.5a22.8 22.8 0 0 1 -28.2-19.6 197.2 197.2 0 0 1 9-85.3 22.8 22.8 0 0 1 31.6-13.2zm44 239.3a199.5 199.5 0 0 0 79.4 32.1A22.8 22.8 0 0 0 192.9 490l3.9-110.8c.7-21.3-25.5-31.9-39.8-16.1l-74.2 82.4a22.8 22.8 0 0 0 4.1 34.1zm145.3-109.9l58.8 94a22.9 22.9 0 0 0 34 5.5 198.4 198.4 0 0 0 52.7-67.6A23 23 0 0 0 364.2 370l-105.4-34.3c-20.3-6.5-37.8 15.8-26.5 33.9zm148.3-132.2a197.4 197.4 0 0 0 -50.4-69.3 22.9 22.9 0 0 0 -34 4.4l-62 91.9c-11.9 17.7 4.7 40.6 25.2 34.7L366 268.6a23 23 0 0 0 14.6-31.2zM62.1 30.2a22.9 22.9 0 0 0 -9.9 32l104.1 180.4c11.7 20.2 42.6 11.9 42.6-11.4V22.9a22.7 22.7 0 0 0 -24.5-22.8 320.4 320.4 0 0 0 -112.3 30.1z"/></svg>
         </div>
-        <div style="background-image: url(./Img/bedroom.jpg); height: 600px;" class="w-full bg-cover bg-no-repeat bg-center">
+        <div style="background-image: url(./Img/bedroom.jpg); height: 680px;" class="w-full bg-cover bg-no-repeat bg-center">
         <nav style="background-image: linear-gradient( to bottom,  rgba(0, 0, 0), transparent);" class="text-lg" style="white-space: nowrap;">
-            <div class=" items-center pt-6 flex justify-start w-4/5">
+            <div class=" items-center pt-6 flex w-full">
                 
-                    <ul class="flex items-center ml-24 pl-10">
-                        <li class="pl-4 w-1/2 px-2 flex relative items-center">
-                            
-                            <input class="h-12 rounded-l w-1/2 px-3 focus:outline-none" type="text" placeholder="things to do, nail salons, plumbers">
+                    <ul class="w-full flex items-center ml-24 pl-10">
+                        <div class="w-1/2 flex justify-start">
+                            <li class="pl-4 w-full px-2 flex justify-center relative items-center">
+                                
+                                <input class="h-12 rounded-l w-1/2 px-3 focus:outline-none" type="text" placeholder="things to do, nail salons, plumbers">
 
-                            <div class="w-px border border-gray h-6 absolute inset-0 mx-auto my-auto"></div>
-                            <div class="flex items-center w-1/2">
-                                <select class="h-12 w-3/4 px-3 focus:outline-none">
-                                    <option class="text-black" value="location" selected>Current Location</option>
-                                    <option value="location"></option>
-                                    <option value="location"></option>
-                                </select>
-                                <button style="background-color: #dd0000; width: 3rem;" class=" rounded-r w-1/4 h-12 -ml-1  " ><i class="text-lg fa fa-search"></i></button>
-                            </div>
-                        </li>
-                        <span class="px-2 flex justify-end"  style="white-space: nowrap;">
+                                <div class="w-px border border-gray h-6 absolute inset-0 mx-auto my-auto"></div>
+                                <div class="flex items-center w-1/2">
+                                    <select class="h-12 w-3/4 px-3 focus:outline-none">
+                                        <option class="text-black" value="location" selected>Current Location</option>
+                                        <option value="location"></option>
+                                        <option value="location"></option>
+                                    </select>
+                                    <button style="background-color: #dd0000; width: 3rem;" class="focus:outline-none rounded-r w-1/4 h-12 -ml-1  " ><i class="text-lg fa fa-search"></i></button>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="px-2 w-1/2 flex justify-end mr-6"  style="white-space: nowrap;">
                             <!-- TODO: Add a blue outline and prevent the hover effect from happening when hovering over the li elements -->
-                            <li class="cursor-pointer rounded hover:bg-black p-2" onclick="toggleBus()">Yalp for Business <i class="fa fa-chevron-down"></i>
+                            <li class="cursor-pointer rounded hover:bg-black p-2 mr-6" onclick="toggleBus()">Yalp for Business <i class="fa fa-chevron-down"></i>
                                 <div class="relative">
                                     <div id="business-dropdn" class="absolute hidden mt-4 -ml-2 rounded bg-white text-black">
                                         <ul class="text-sm w-9/10 m-4">
@@ -56,16 +58,16 @@
                                 </div>
                             </li>
                         
-                            <li class="px-2 rounded hover:bg-black p-2"><a href="">Write a Review</a></li>
+                            <li class="px-2 rounded hover:bg-black p-2 mr-2"><a href="">Write a Review</a></li>
                             <div class="flex">
                                 <li class="px-2">
-                                    <button  class="h-12 whitespace-nowrap hover:bg-[#E6f8fafc] font-semibold border-2 border-white px-4 rounded">Log In</button>
+                                    <button  class="focus:outline-none h-12 whitespace-nowrap hover:bg-[#E6f8fafc] font-semibold border-2 border-white px-4 rounded">Log In</button>
                                 </li>
                                 <li class="px-1">
-                                    <button style="background-color: #dd0000;" class=" h-12 whitespace-nowrap font-semibold px-4  rounded">Sign Up</button>
+                                    <button style="background-color: #dd0000;" class="focus:outline-none h-12 whitespace-nowrap font-semibold px-4  rounded">Sign Up</button>
                                 </li>
                             </div>
-                        </span>
+                        </div>
                     </ul> 
                
                   
@@ -239,7 +241,7 @@
     <main>
         <section class="text-center mb-10">
             <h2 class="text-3xl font-bold my-10">Recent Activity</h2>
-            <div class="grid grid-cols-3 mx-auto w-11/12 gap-10" style="max-width: 1160px;">
+            <div class="grid grid-cols-3 mx-auto w-11/12 gap-10" style="max-width: 1150px;">
                 <div class="border border-gray flex flex-col" style="max-width:360px; max-height: 390px;">
                     <div class="flex ml-6 mt-4 mb-3">
                         <a href="#"><img class="rounded-full object-cover w-10 h-10" src="./Img/man-pic.jpg" alt=""></a>
@@ -585,7 +587,7 @@
         <hr>
         <section class="text-center mb-10">
             <h2 class="text-3xl font-bold my-10">Categories</h2>
-            <div class="grid grid-cols-4 w-11/12 mx-auto gap-10" style="max-width: 1160px;">
+            <div class="grid grid-cols-4 w-11/12 mx-auto gap-10" style="max-width: 1150px;">
                 
                         <a class=" border border-gray w-52 h-48  border rounded hover:shadow shadow-black" href="" style="max-width: 260px;">
                             <div class="flex w-full h-full flex-col justify-center items-center">
@@ -666,49 +668,49 @@
             </div>
         </section>
         <footer class="mt-12 bg-gray-100 pt-10">
-            <div class="grid grid-cols-4 w-11/12 m-auto mt-5 gap-10" style="max-width: 1160px;">
+            <div class="grid grid-cols-4 w-11/12 m-auto mt-5 gap-10" style="max-width: 1150px;">
                 <div>
                     <h2 class="font-bold text-lg mb-4">About</h2>
                     <ul class="text-sm">
-                        <li class="my-1 hover:underline"><a href="">About Yalp</a></li>
-                        <li class="my-1 hover:underline"><a href="">Careers</a></li>
-                        <li class="my-1 hover:underline"><a href="">Press</a></li>
-                        <li class="my-1 hover:underline"><a href="">Investor Relations</a></li>
-                        <li class="my-1 hover:underline"><a href="">Trust & Safety</a></li>
-                        <li class="my-1 hover:underline"><a href="">Content Guidelines</a></li>
-                        <li class="my-1 hover:underline"><a href="">Accessibility Statement</a></li>
-                        <li class="my-1 hover:underline"><a href="">Terms of Service</a></li>
-                        <li class="my-1 hover:underline"><a href="">Privacy Policy</a></li>
-                        <li class="my-1 hover:underline"><a href="">Ad Choices</a></li>
-                        <li class="my-1 hover:underline"><a href="">Your Privacy Choices</a></li>
+                        <li class="mb-2 hover:underline"><a href="">About Yalp</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Careers</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Press</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Investor Relations</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Trust & Safety</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Content Guidelines</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Accessibility Statement</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Terms of Service</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Privacy Policy</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Ad Choices</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Your Privacy Choices</a></li>
                     </ul>
                 </div>
                 <div>
                     <h2 class="font-bold text-lg mb-4">Discover</h2>
                     <ul class="text-sm">
-                        <li class="my-1 hover:underline"><a href="">Yalp Project Cost Guides</a></li>
-                        <li class="my-1 hover:underline"><a href="">Collections</a></li>
-                        <li class="my-1 hover:underline"><a href="">Talk</a></li>
-                        <li class="my-1 hover:underline"><a href="">Events</a></li>
-                        <li class="my-1 hover:underline"><a href="">Yalp Blog</a></li>
-                        <li class="my-1 hover:underline"><a href="">Support</a></li>
-                        <li class="my-1 hover:underline"><a href="">Yalp Mobile</a></li>
-                        <li class="my-1 hover:underline"><a href="">Developers</a></li>
-                        <li class="my-1 hover:underline"><a href="">RSS</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Yalp Project Cost Guides</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Collections</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Talk</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Events</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Yalp Blog</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Support</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Yalp Mobile</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Developers</a></li>
+                        <li class="mb-2 hover:underline"><a href="">RSS</a></li>
                     </ul>
                 </div>
                 <div>
                     <h2 class="font-bold text-lg mb-4">Yalp for Business</h2>
                     <ul class="text-sm">
-                        <li class="my-1 hover:underline"><a href="">Yalp for Business</a></li>
-                        <li class="my-1 hover:underline"><a href="">Business Owner Login</a></li>
-                        <li class="my-1 hover:underline"><a href="">Claim your Business Page</a></li>
-                        <li class="my-1 hover:underline"><a href="">Advertise on Yalp</a></li>
-                        <li class="my-1 hover:underline"><a href="">Yalp for Restaurant Owners</a></li>
-                        <li class="my-1 hover:underline"><a href="">Table Management</a></li>
-                        <li class="my-1 hover:underline"><a href="">Business Success Stories</a></li>
-                        <li class="my-1 hover:underline"><a href="">Business Support</a></li>
-                        <li class="my-1 hover:underline"><a href="">Yalp Blog for Business</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Yalp for Business</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Business Owner Login</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Claim your Business Page</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Advertise on Yalp</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Yalp for Restaurant Owners</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Table Management</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Business Success Stories</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Business Support</a></li>
+                        <li class="mb-2 hover:underline"><a href="">Yalp Blog for Business</a></li>
                     </ul>
                 </div>
                 <div>
@@ -818,7 +820,7 @@
                 </div>
             </div>
 
-            <div class="mt-12 pb-12 w-11/12 mx-auto text-sm" style="max-width: 1160px">
+            <div class="mt-12 pb-16 w-11/12 mx-auto text-xs" style="max-width: 1150px">
                 <p>Copyright &#169; 2004-2024 Yalp Inc. Yalp, Yalp I, I and related marks are regstered trademarks of Yalp.</p>
             </div>
         </footer>
