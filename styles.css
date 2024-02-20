@@ -1,0 +1,36 @@
+#restaurant-dropdn, #home-dropdn, #auto-dropdn, #more-dropdn {
+    display: none;
+}
+
+.res-btn:hover #restaurant-dropdn, .home-btn:hover #home-dropdn, .auto-btn:hover #auto-dropdn, .more-btn:hover #more-dropdn {
+    display: block;
+}
+
+.hover-white:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.outline:focus {
+    outline: none !important;
+    border: 2px solid rgb(0, 204, 255);
+}
+
+.yelp-red {
+    border-color: #FF1A1A;
+}
+
+.hover-red {
+    background-color: #dd0000;
+}
+
+.hover-red:hover {
+    background-color: #FF1A1A;
+}
+
+.hover-delay {
+    transition: ease-in-out .5s;
+}
+
+.icon-dropdown:hover .dropdown-content {
+    display: block;
+}
