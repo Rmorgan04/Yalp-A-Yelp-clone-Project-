@@ -40,43 +40,71 @@ function updateTimerAndText() {
 
     if (i === 0) {
         timer.forEach(element => element.classList.remove('timer'));
+        selectTimer.forEach(element => element.classList.remove('white'));
+        selectTimer.forEach(element => element.classList.add('opaque-white'));
     }
     
     bgImg.style.backgroundImage = `url(${backgrounds[i]})`;
     timer[i].classList.add('timer');
     for (let j = 0; j < backgroundText.length; j++) {
         backgroundText[j].classList.toggle('hidden', j !== i);
+        selectTimer[j].classList.toggle('cursor-pointer', j !== i);
         
     }
 };
-
+// Function to handle user interaction and restart cycle
 function handleSelectClick(index) {
     return function() {
+        // set the current element to the one that is clicked
         i = index;
-        selectTimer.filter((element, index) => {
-            element[index] < i;
-        }).forEach(element => element.classList.remove('timer'));
+
+        //reset timers if a previous element is clicked
+        resetTimers(index);
         updateTimerAndText();
-
+        // Clear any existing timeout
         clearTimeout(timeoutId);
-
+        // Start a new timeout to automatically advance after 5 seconds
         timeoutId = setTimeout(autoAdvance, 5000);
     };
 }
 
+// Function to reset timers
+function resetTimers(index) {
+    const previousTimers = selectTimer.filter((element, i) => {
+        return i <= index - 1;
+    });
+
+    const afterTimers = selectTimer.filter((element, i) => {
+        return i >= index;
+    });
+
+    const afterTimer = timer.filter((element, i) => {
+        return i >= index;
+    });
+
+    previousTimers.forEach(element => element.classList.remove('opaque-white'));
+    previousTimers.forEach(element => element.classList.add('white'));
+
+    afterTimers.forEach(element => element.classList.remove('white'));
+    afterTimers.forEach(element => element.classList.add('opaque-white'));
+    afterTimer.forEach(element => element.classList.remove('timer'));
+}
+
+// Function to automatically advance the cycle
 function autoAdvance() {
     i = (i + 1) % backgrounds.length;
     updateTimerAndText();
-
+    // Reset timeout for next automatic advance
     timeoutId = setTimeout(autoAdvance, 5000);
 }
-
+// Event listeners and initial setup
 selectTimer.forEach((element, index) => {
     element.addEventListener('click', handleSelectClick(index));
 });
 
 let timeoutId = setTimeout(autoAdvance, 5000);
 
+// Initial update
 updateTimerAndText();
 
 // window.onload = function () {

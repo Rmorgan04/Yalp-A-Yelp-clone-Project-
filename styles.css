@@ -49,6 +49,10 @@
     animation: timer-delay ease-in forwards 5s;
 }
 
+.white {
+    background-color: white;
+}
+
 @keyframes timer-delay {
     from {height: 0%;}
     to {height: 100%;}
