@@ -36,31 +36,20 @@
     display: block;
 }
 
-.test {
+.opaque-white {
     background-color: rgba(255, 255, 255, .4);
 }
 
-.test::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    background-color: white;
-    transition: 5s ease bottom;
-}
-
-.test:hover .test::before {
-    bottom: 0;
-}
 
 #img-hero {
     transition: background-image 1s ease-in-out;
 }
 
-#paint-hero, #italian-hero, #auto-hero, #clean-hero {
-    transition: opacity 2s ease-in-out;
-    opacity: 1;
+.timer {
+    animation: timer-delay ease-in forwards 5s;
+}
+
+@keyframes timer-delay {
+    from {height: 0%;}
+    to {height: 100%;}
 }

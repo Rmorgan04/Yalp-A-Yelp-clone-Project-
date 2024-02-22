@@ -34,48 +34,57 @@ const backgrounds = ['./Img/bedroom.jpg', './Img/pasta.jpg', './Img/mechanic.jpg
 const backgroundText = [document.getElementById('paint-hero'), document.getElementById('italian-hero'), document.getElementById('auto-hero'), document.getElementById('clean-hero')];
 const timer = [document.getElementById('0'), document.getElementById('1'), document.getElementById('2'), document.getElementById('3')];
 const bgImg = document.getElementById('img-hero');
+const selectTimer = [document.getElementById('zero'), document.getElementById('one'), document.getElementById('two'), document.getElementById('three')];
 
 function updateTimerAndText() {
 
-    bgImg.style.backgroundImage = `url(${backgrounds[i]})`;
-    
-    timer.forEach(element => element.style.backgroundColor = 'rgba(255, 255, 255, .4');
-    
-    for (let j = 0; j <= i; j++) {
-        timer[j].style.backgroundColor = 'white';
+    if (i === 0) {
+        timer.forEach(element => element.classList.remove('timer'));
     }
     
-
+    bgImg.style.backgroundImage = `url(${backgrounds[i]})`;
+    timer[i].classList.add('timer');
     for (let j = 0; j < backgroundText.length; j++) {
         backgroundText[j].classList.toggle('hidden', j !== i);
         
     }
 };
 
-window.onload = function () {
-    updateTimerAndText();
-    setInterval(function() {
-        i = (i + 1) % backgrounds.length;
-        timer.forEach(element => element.style.backgroundColor = 'rgba(255, 255, 255, .4');
+function handleSelectClick(index) {
+    return function() {
+        i = index;
+        selectTimer.filter((element, index) => {
+            element[index] < i;
+        }).forEach(element => element.classList.remove('timer'));
         updateTimerAndText();
-    }, 5000);
-};
 
-// setInterval (function() {
-//     const bgImg = document.getElementById('img-hero');
-//     if (i < 4) {
-//         bgImg.style.backgroundImage = `url(${backgrounds[i]})`;
-//         backgroundText.forEach((element, index) => {
-//             element.classList.toggle('hidden', index !== i);
-//         });
-//         timer[i].style.backgroundColor = "white";
-        
-//         i++;
-//     } else {
-//         i = 0;
-//         timer.forEach((element) => {
-//             element.style.backgroundColor = "rgba(255, 255, 255, .4)"
-//         })
-//     }
+        clearTimeout(timeoutId);
 
-// }, 5000);
+        timeoutId = setTimeout(autoAdvance, 5000);
+    };
+}
+
+function autoAdvance() {
+    i = (i + 1) % backgrounds.length;
+    updateTimerAndText();
+
+    timeoutId = setTimeout(autoAdvance, 5000);
+}
+
+selectTimer.forEach((element, index) => {
+    element.addEventListener('click', handleSelectClick(index));
+});
+
+let timeoutId = setTimeout(autoAdvance, 5000);
+
+updateTimerAndText();
+
+// window.onload = function () {
+//     updateTimerAndText();
+//     setInterval(function() {
+//         i = (i + 1) % backgrounds.length;
+//         updateTimerAndText();
+//     }, 5000);
+    
+// };
+
