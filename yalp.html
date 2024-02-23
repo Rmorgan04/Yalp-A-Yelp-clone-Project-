@@ -18,10 +18,10 @@
         <nav style="background-image: linear-gradient( to bottom,  rgba(0, 0, 0), transparent);" class="text-lg" style="white-space: nowrap;">
             <div class="flex flex-col ml-20">
                 <div class=" items-center pt-6 flex w-full">
-                    <ul class="w-full flex items-center pl-10">
-                        <div class="w-11/12 flex justify-start" style="max-width: 1150px;">
-                            <li class="pl-4 w-5/6 px-2 mx-auto flex justify-center relative items-center">
-                                <form action="get" class="w-full flex">
+                    <ul class="w-full flex items-center xl:pl-16">
+                        <div class="w-full lg:w-11/12 flex justify-start mx-auto ">
+                            <li class="pl-4 w-full px-2 flex justify-center relative items-center ml-10">
+                                <form action="get" class="flex xl:w-full w-4/5 " style="max-width: 825px; min-width: 320px;">
                                     <input class="h-12 rounded-l w-1/2 px-3 text-black focus:outline-none" type="text" placeholder="things to do, nail salons, plumbers"/>
 
                                     <div class="w-px border border-gray h-6 absolute inset-0 mx-auto my-auto"></div>
@@ -36,42 +36,59 @@
                                 </form>
                             </li>
                         </div>
-                        <div class="px-2 w-2/5 flex justify-end mr-6"  style="white-space: nowrap;">
-                            <li class=" p-2 mr-6">
-                                <button id="bus-btn" class="hover-white h-10 rounded -mt-2 outline p-1 font-semibold text-sm dropbtn" style="min-width: fit-content;" onclick="toggleElement('business-dropdn')">Yalp for Business <i class="fa fa-chevron-down"></i></button>
+                        <div class="flex justify-end">
+                            <div class="hidden lg:flex px-2 w-2/5 flex justify-end mr-6"  style="white-space: nowrap;">    
+                                <li class=" p-2 mr-6">
+                                    <button id="bus-btn" class="hover-white h-10 rounded -mt-2 outline p-1 font-semibold text-sm dropbtn" style="min-width: fit-content;" onclick="toggleElement('business-dropdn')">Yalp for Business <i class="fa fa-chevron-down"></i></button>
+                                    <div class="relative">
+                                        <div id="business-dropdn" class="absolute dropdown-box hidden mt-4 -ml-2 rounded bg-white text-black">
+                                            <ul class="text-sm w-9/10 m-4">
+                                                <li class="w-9/10 flex items-center  p-2 hover:bg-gray-200 rounded">
+                                                    <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>    
+                                                    <a href="#">Add a Business</a></li>
+                                                <li class="w-9/10 flex items-center  p-2 hover:bg-gray-200 hover:bg-gray-200 rounded">
+                                                    <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                                                    <a href="#">Claim your Business</a></li>
+                                                <li class="w-9/10 flex items-center  p-2 hover:bg-gray-200 hover:bg-gray-200 rounded">
+                                                    <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+                                                    <a href="#">Log in to Business Account</a></li>
+                                                <hr class="my-4">
+                                                <li class="w-9/10 flex items-center  p-2 hover:bg-gray-200 hover:bg-gray-200 rounded">
+                                                    <svg class="h-4 w-4 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M42.9 240.3l99.6 48.6c19.2 9.4 16.2 37.5-4.5 42.7L30.5 358.5a22.8 22.8 0 0 1 -28.2-19.6 197.2 197.2 0 0 1 9-85.3 22.8 22.8 0 0 1 31.6-13.2zm44 239.3a199.5 199.5 0 0 0 79.4 32.1A22.8 22.8 0 0 0 192.9 490l3.9-110.8c.7-21.3-25.5-31.9-39.8-16.1l-74.2 82.4a22.8 22.8 0 0 0 4.1 34.1zm145.3-109.9l58.8 94a22.9 22.9 0 0 0 34 5.5 198.4 198.4 0 0 0 52.7-67.6A23 23 0 0 0 364.2 370l-105.4-34.3c-20.3-6.5-37.8 15.8-26.5 33.9zm148.3-132.2a197.4 197.4 0 0 0 -50.4-69.3 22.9 22.9 0 0 0 -34 4.4l-62 91.9c-11.9 17.7 4.7 40.6 25.2 34.7L366 268.6a23 23 0 0 0 14.6-31.2zM62.1 30.2a22.9 22.9 0 0 0 -9.9 32l104.1 180.4c11.7 20.2 42.6 11.9 42.6-11.4V22.9a22.7 22.7 0 0 0 -24.5-22.8 320.4 320.4 0 0 0 -112.3 30.1z"/></svg>
+                                                    <a href="#">Explore Yalp for Business</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="px-2 rounded hover-white p-2 mr-2 h-10 mt-1 text-sm font-semibold"><a href="">Write a Review</a></li>
+                                <div class="flex">
+                                    <li class="px-2">
+                                        <button  class="hover-white hover-delay focus:outline-none h-12 whitespace-nowrap font-semibold border-2 border-white px-4 rounded">Log In</button>
+                                    </li>
+                                    <li class="px-1">
+                                        <button class="hover-red hover-delay focus:outline-none h-12 whitespace-nowrap font-semibold px-4  rounded">Sign Up</button>
+                                    </li>
+                                </div>
+                            </div>    
+                            <div class="block lg:hidden px-2 w-2/5 flex justify-end mr-6"  style="white-space: nowrap;">
+                                <button onclick="toggleElement('menu-dropdn')" style="min-width: fit-content;" class=" w-full h-full p-3 dropbtn hover-red hover-delay rounded focus:outline-none">
+                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                                </button>
                                 <div class="relative">
-                                    <div id="business-dropdn" class="absolute dropdown-box hidden mt-4 -ml-2 rounded bg-white text-black">
+                                    <div id="menu-dropdn" class="z-20 absolute dropdown-box mt-16 -ml-32 mr-2 hidden rounded bg-white text-black">
                                         <ul class="text-sm w-9/10 m-4">
-                                            <li class="w-9/10 flex items-center  p-2 hover:bg-gray-200 rounded">
-                                                <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>    
-                                                <a href="#">Add a Business</a></li>
-                                            <li class="w-9/10 flex items-center  p-2 hover:bg-gray-200 hover:bg-gray-200 rounded">
-                                                <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
-                                                <a href="#">Claim your Business</a></li>
-                                            <li class="w-9/10 flex items-center  p-2 hover:bg-gray-200 hover:bg-gray-200 rounded">
-                                                <svg class="h-5 w-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
-                                                <a href="#">Log in to Business Account</a></li>
-                                            <hr class="my-4">
-                                            <li class="w-9/10 flex items-center  p-2 hover:bg-gray-200 hover:bg-gray-200 rounded">
-                                                <svg class="h-4 w-4 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M42.9 240.3l99.6 48.6c19.2 9.4 16.2 37.5-4.5 42.7L30.5 358.5a22.8 22.8 0 0 1 -28.2-19.6 197.2 197.2 0 0 1 9-85.3 22.8 22.8 0 0 1 31.6-13.2zm44 239.3a199.5 199.5 0 0 0 79.4 32.1A22.8 22.8 0 0 0 192.9 490l3.9-110.8c.7-21.3-25.5-31.9-39.8-16.1l-74.2 82.4a22.8 22.8 0 0 0 4.1 34.1zm145.3-109.9l58.8 94a22.9 22.9 0 0 0 34 5.5 198.4 198.4 0 0 0 52.7-67.6A23 23 0 0 0 364.2 370l-105.4-34.3c-20.3-6.5-37.8 15.8-26.5 33.9zm148.3-132.2a197.4 197.4 0 0 0 -50.4-69.3 22.9 22.9 0 0 0 -34 4.4l-62 91.9c-11.9 17.7 4.7 40.6 25.2 34.7L366 268.6a23 23 0 0 0 14.6-31.2zM62.1 30.2a22.9 22.9 0 0 0 -9.9 32l104.1 180.4c11.7 20.2 42.6 11.9 42.6-11.4V22.9a22.7 22.7 0 0 0 -24.5-22.8 320.4 320.4 0 0 0 -112.3 30.1z"/></svg>
-                                                <a href="#">Explore Yalp for Business</a></li>
+                                            <li class="py-1 px-2 font-semibold hover:bg-gray-200 rounded"><a href="">Yalp for Business</a></li>
+                                            <li class="py-1 px-2 font-semibold hover:bg-gray-200 rounded"><a href="">Write a Review</a></li>
+                                            <li class="py-1 px-2 font-semibold hover:bg-gray-200 rounded"><a href="">Log In</a></li>
+                                            <li class="py-1 px-2 font-semibold hover:bg-gray-200 rounded"><a href="">Sign Up</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="px-2 rounded hover-white p-2 mr-2 h-10 mt-1 text-sm font-semibold"><a href="">Write a Review</a></li>
-                            <div class="flex">
-                                <li class="px-2">
-                                    <button  class="hover-white hover-delay focus:outline-none h-12 whitespace-nowrap font-semibold border-2 border-white px-4 rounded">Log In</button>
-                                </li>
-                                <li class="px-1">
-                                    <button class="hover-red hover-delay focus:outline-none h-12 whitespace-nowrap font-semibold px-4  rounded">Sign Up</button>
-                                </li>
                             </div>
                         </div>
                     </ul> 
                 </div>
-                <ul class="flex pb-5 pt-3 font-light text-sm w-9/12 mx-auto" style="white-space: nowrap;">
+                <ul class="hidden md:flex pl-12 pb-5 pt-3 font-light text-sm w-11/12 mx-auto" style="white-space: nowrap; max-width: 1360px;">
                     <div class="res-btn relative">
                         <li class=" px-5 "><button class=" focus:outline-none">Restaurants<span class="pl-2 text-sm"><i class="fa fa-chevron-down"></i></span></button>
                             <div class="h-4"></div>    
@@ -281,9 +298,9 @@
         </div>
     </header>
     <main>
-        <section id="activity-section" class="text-center mb-5 mx-auto overflow-hidden" style="max-height: 1390px;">
+        <section id="activity-section" class="text-center mb-5 mx-auto overflow-hidden">
             <h2 class="text-3xl font-bold my-10">Recent Activity</h2>
-            <div class="grid grid-cols-3 mx-auto w-11/12 gap-10" style="max-width: 1150px;">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto w-1/2 md:w-5/6 lg:w-11/12 gap-10" style="max-width: 1150px;">
                 <div class="border border-gray flex flex-col" style="max-width:360px; max-height: 390px;">
                     <div class="flex ml-6 mt-4 mb-3">
                         <a href="#"><img class="rounded-full object-cover w-10 h-10" src="./Img/man-pic.jpg" alt=""></a>
@@ -898,13 +915,13 @@
                 </div>
             </div>
         </section>
-        <div id="more-activity-btn" class="mx-auto text-center mb-24 text-teal-700 font-semibold ">
+        <div id="more-activity-btn" class="mx-auto text-center mb-20 text-teal-700 font-semibold ">
             <button onclick="showMore()" class="hover:underline"><i class="fa fa-chevron-down text-sm pr-2"></i>Show More Activity</button>
         </div>
         <hr>
         <section class="text-center mb-10">
             <h2 class="text-3xl font-bold my-10">Categories</h2>
-            <div class="grid grid-cols-4 w-11/12 mx-auto gap-10" style="max-width: 1150px;">
+            <div class="grid grid-cols-2 lg:grid-cols-4 w-1/2 md:w-3/5 lg:w-11/12 mx-auto gap-10" style="max-width: 1150px;">
                 
                         <a class=" border border-gray w-52 h-48  border rounded hover:shadow shadow-black" href="" style="max-width: 260px;">
                             <div class="flex w-full h-full flex-col justify-center items-center">
@@ -985,10 +1002,10 @@
             </div>
         </section>
         <footer class="mt-12 bg-gray-100 pt-10">
-            <div class="grid grid-cols-4 w-11/12 m-auto mt-5 gap-10" style="max-width: 1150px;">
+            <div class="flex flex-col md:grid md:grid-cols-4 w-1/2 md:w-4/5 lg:w-11/12 m-auto mt-5 md:gap-10" style="max-width: 1150px; white-space: nowrap;">
                 <div>
-                    <h2 class="font-bold text-lg mb-4">About</h2>
-                    <ul class="text-sm">
+                    <h2 class=" md:font-bold md:text-lg mb-4 md:cursor-default cursor-pointer">About</h2>
+                    <ul class="text-sm hidden md:block">
                         <li class="mb-2 hover:underline"><a href="">About Yalp</a></li>
                         <li class="mb-2 hover:underline"><a href="">Careers</a></li>
                         <li class="mb-2 hover:underline"><a href="">Press</a></li>
@@ -1003,8 +1020,8 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="font-bold text-lg mb-4">Discover</h2>
-                    <ul class="text-sm">
+                    <h2 class="md:font-bold md:text-lg mb-4 md:cursor-default cursor-pointer">Discover</h2>
+                    <ul class="text-sm hidden md:block">
                         <li class="mb-2 hover:underline"><a href="">Yalp Project Cost Guides</a></li>
                         <li class="mb-2 hover:underline"><a href="">Collections</a></li>
                         <li class="mb-2 hover:underline"><a href="">Talk</a></li>
@@ -1017,8 +1034,8 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="font-bold text-lg mb-4">Yalp for Business</h2>
-                    <ul class="text-sm">
+                    <h2 class="md:font-bold md:text-lg mb-4 md:cursor-default cursor-pointer">Yalp for Business</h2>
+                    <ul class="text-sm hidden md:block">
                         <li class="mb-2 hover:underline"><a href="">Yalp for Business</a></li>
                         <li class="mb-2 hover:underline"><a href="">Business Owner Login</a></li>
                         <li class="mb-2 hover:underline"><a href="">Claim your Business Page</a></li>
@@ -1032,7 +1049,7 @@
                 </div>
                 <div>
                     <div class="mb-3 relative">
-                        <label for="langauges"  class="block text-lg font-bold">Languages</label>
+                        <label for="langauges"  class="hidden md:block text-lg font-bold">Languages</label>
                         <button onclick="toggleElement('lang-btn')" class="dropbtn my-1 focus:outline-none relative" name="langauges" id="langauges">English<span class="pl-2 text-sm"><i class="fa fa-chevron-down"></i></span></button>
                             <div id="lang-btn" class="hidden dropdown-box border border-gray absolute bg-white z-10 rounded" style="box-shadow: 0 0 15px -5px;max-height: 430px; overflow-x: hidden;  overflow-y: auto; top: -400px;">
                                 <ul class="p-3 flex flex-col text-sm font-semibold">
@@ -1100,7 +1117,7 @@
                             </div>
                     </div>
                     <div class="relative">
-                        <label for="countries" class="block text-lg font-bold">Countries</label>
+                        <label for="countries" class="hidden md:block text-lg font-bold">Countries</label>
                         <button onclick="toggleElement('country-btn')" class="dropbtn my-1 focus:outline-none relative" name="countries" id="countries">United States<span class="pl-2 text-sm"><i class="fa fa-chevron-down"></i></span></button>
                             <div id="country-btn" class="hidden dropdown-box border-gray absolute bg-white z-10 rounded" style="box-shadow: 0 0 15px -5px;max-height: 430px; overflow-x: hidden;  overflow-y: auto; top: -400px;">
                                 <ul  class="p-3 flex flex-col text-sm font-semibold">

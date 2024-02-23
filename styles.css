@@ -53,6 +53,17 @@
     background-color: white;
 }
 
+#activity-section {
+    max-height: 1390px;
+}
+
+@media screen and (width < 768px) {
+    #activity-section {
+        max-height: 1370px;
+    }
+    
+}
+
 @keyframes timer-delay {
     from {height: 0%;}
     to {height: 100%;}

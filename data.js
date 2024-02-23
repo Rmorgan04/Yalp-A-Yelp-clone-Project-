@@ -10,7 +10,7 @@ function showMore() {
     const show = document.getElementById('more-activity-btn');
     const activitySection = document.getElementById('activity-section');
 
-    activitySection.style.maxHeight = '3000px';
+    activitySection.style.maxHeight = 'none';
     activitySection.classList.remove('overflow-hidden');
     show.classList.add('hidden');
 }
@@ -37,7 +37,7 @@ const bgImg = document.getElementById('img-hero');
 const selectTimer = [document.getElementById('zero'), document.getElementById('one'), document.getElementById('two'), document.getElementById('three')];
 
 function updateTimerAndText() {
-
+    // Return to default at the beggining of the cycle
     if (i === 0) {
         timer.forEach(element => element.classList.remove('timer'));
         selectTimer.forEach(element => element.classList.remove('white'));
@@ -49,7 +49,7 @@ function updateTimerAndText() {
     for (let j = 0; j < backgroundText.length; j++) {
         backgroundText[j].classList.toggle('hidden', j !== i);
         selectTimer[j].classList.toggle('cursor-pointer', j !== i);
-        
+            
     }
 };
 // Function to handle user interaction and restart cycle
@@ -66,6 +66,7 @@ function handleSelectClick(index) {
         // Start a new timeout to automatically advance after 5 seconds
         timeoutId = setTimeout(autoAdvance, 5000);
     };
+
 }
 
 // Function to reset timers
@@ -107,12 +108,4 @@ let timeoutId = setTimeout(autoAdvance, 5000);
 // Initial update
 updateTimerAndText();
 
-// window.onload = function () {
-//     updateTimerAndText();
-//     setInterval(function() {
-//         i = (i + 1) % backgrounds.length;
-//         updateTimerAndText();
-//     }, 5000);
-    
-// };
 
