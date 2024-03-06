@@ -14,14 +14,14 @@
         <div class="absolute text-3xl font-bold" style="top: 4.5%; left: 42px">yalp</div>
         <div class="absolute"  style="top: 5.5%; left: 99px"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="30px" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M42.9 240.3l99.6 48.6c19.2 9.4 16.2 37.5-4.5 42.7L30.5 358.5a22.8 22.8 0 0 1 -28.2-19.6 197.2 197.2 0 0 1 9-85.3 22.8 22.8 0 0 1 31.6-13.2zm44 239.3a199.5 199.5 0 0 0 79.4 32.1A22.8 22.8 0 0 0 192.9 490l3.9-110.8c.7-21.3-25.5-31.9-39.8-16.1l-74.2 82.4a22.8 22.8 0 0 0 4.1 34.1zm145.3-109.9l58.8 94a22.9 22.9 0 0 0 34 5.5 198.4 198.4 0 0 0 52.7-67.6A23 23 0 0 0 364.2 370l-105.4-34.3c-20.3-6.5-37.8 15.8-26.5 33.9zm148.3-132.2a197.4 197.4 0 0 0 -50.4-69.3 22.9 22.9 0 0 0 -34 4.4l-62 91.9c-11.9 17.7 4.7 40.6 25.2 34.7L366 268.6a23 23 0 0 0 14.6-31.2zM62.1 30.2a22.9 22.9 0 0 0 -9.9 32l104.1 180.4c11.7 20.2 42.6 11.9 42.6-11.4V22.9a22.7 22.7 0 0 0 -24.5-22.8 320.4 320.4 0 0 0 -112.3 30.1z"/></svg>
         </div>
-        <div id="img-hero" style="background-image: url(./Img/bedroom.jpg); height: 680px;" class="w-full bg-cover bg-no-repeat bg-center">
+        <div id="img-hero" style="background-image: url(./Img/bedroom.jpg); height: 450px;" class="w-full bg-cover bg-no-repeat bg-center">
         <nav style="background-image: linear-gradient( to bottom,  rgba(0, 0, 0), transparent);" class="text-lg" style="white-space: nowrap;">
             <div class="flex flex-col ml-20">
                 <div class=" items-center pt-6 flex w-full">
                     <ul class="w-full flex items-center xl:pl-16">
                         <div class="w-full lg:w-11/12 flex justify-start mx-auto ">
                             <li class="pl-4 w-full px-2 flex justify-center relative items-center ml-10">
-                                <form action="get" class="flex xl:w-full w-4/5 " style="max-width: 825px; min-width: 320px;">
+                                <form action="get" class="hidden sm:flex xl:w-full w-4/5 " style="max-width: 825px; min-width: 320px;">
                                     <input class="h-12 rounded-l w-1/2 px-3 text-black focus:outline-none" type="text" placeholder="things to do, nail salons, plumbers"/>
 
                                     <div class="w-px border border-gray h-6 absolute inset-0 mx-auto my-auto"></div>
@@ -77,6 +77,7 @@
                                 <div class="relative">
                                     <div id="menu-dropdn" class="z-20 absolute dropdown-box mt-16 -ml-32 mr-2 hidden rounded bg-white text-black">
                                         <ul class="text-sm w-9/10 m-4">
+                                            <li class="py-1 px-2 sm:hidden font-semibold hover:bg-gray-200 rounded"><a href="">Search</a></li>
                                             <li class="py-1 px-2 font-semibold hover:bg-gray-200 rounded"><a href="">Yalp for Business</a></li>
                                             <li class="py-1 px-2 font-semibold hover:bg-gray-200 rounded"><a href="">Write a Review</a></li>
                                             <li class="py-1 px-2 font-semibold hover:bg-gray-200 rounded"><a href="">Log In</a></li>
@@ -276,20 +277,20 @@
                 </div>
             </div>
             <div id="paint-hero" class=" ml-8 pt-4 mx-auto text-white" style="max-width: 500px;  min-width: 500px;">
-                <h2 class=" text-5xl font-extrabold leading-none">Nothing like a new coat of paint</h2>
-                <button class="p-2 pr-4 h-12 w-40 mx-auto text-lg font-semibold mt-8 hover-red hover-delay rounded"><i class="text-lg fa fa-search pr-3"></i>Painters</button>
+                <h2 class=" sm:text-5xl font-extrabold leading-none">Nothing like a new coat of paint</h2>
+                <button class="p-2 pr-4 md:h-12 h-10 w-28 md:w-40 mx-auto md:text-lg font-semibold mt-8 hover-red hover-delay rounded"><i class="text-lg fa fa-search pr-3"></i>Painters</button>
             </div>
             <div id="italian-hero" class="hidden ml-8 pt-4 mx-auto text-white" style="max-width: 500px;  min-width: 500px;">
-                <h2 class=" text-5xl font-extrabold leading-none">Praiseworthy pasta</h2>
-                <button class="p-2 pr-4 h-12 w-40 mx-auto text-lg font-semibold mt-8 hover-red hover-delay rounded"><i class="text-lg fa fa-search pr-3"></i>Italian</button>
+                <h2 class=" sm:text-5xl font-extrabold leading-none">Praiseworthy pasta</h2>
+                <button class="p-2 pr-4 md:h-12 h-10 w-28 md:w-40 mx-auto md:text-lg font-semibold mt-8 hover-red hover-delay rounded"><i class="text-lg fa fa-search pr-3"></i>Italian</button>
             </div>
             <div id="auto-hero" class="hidden ml-8 pt-4 mx-auto text-white" style="max-width: 500px;  min-width: 500px;">
-                <h2 class=" text-5xl font-extrabold leading-none">Time for a tune-up?</h2>
-                <button class="p-2 pr-4 h-12 w-48 mx-auto text-lg font-semibold mt-8 hover-red hover-delay rounded"><i class="text-lg fa fa-search pr-3"></i>Auto Repair</button>
+                <h2 class=" sm:text-5xl font-extrabold leading-none">Time for a tune-up?</h2>
+                <button class="p-2 pr-4 md:h-12 h-10 w-28 md:w-48 mx-auto md:text-lg font-semibold mt-8 hover-red hover-delay rounded"><i class="text-lg fa fa-search pr-3"></i>Auto Repair</button>
             </div>
             <div id="clean-hero" class="hidden ml-8 pt-4 mx-auto text-white" style="max-width: 500px;  min-width: 500px;">
-                <h2 class=" text-5xl font-extrabold leading-none">Get a deep clean</h2>
-                <button class="p-2 pr-4 h-12 w-40 mx-auto text-lg font-semibold mt-8 hover-red hover-delay rounded"><i class="text-lg fa fa-search pr-3"></i>Cleaners</button>
+                <h2 class=" sm:text-5xl font-extrabold leading-none">Get a deep clean</h2>
+                <button class="p-2 pr-4 md:h-12 h-10 w-28 md:w-40 mx-auto md:text-lg font-semibold mt-8 hover-red hover-delay rounded"><i class="text-lg fa fa-search pr-3"></i>Cleaners</button>
             </div>
 
             
@@ -921,7 +922,7 @@
         <hr>
         <section class="text-center mb-10">
             <h2 class="text-3xl font-bold my-10">Categories</h2>
-            <div class="grid grid-cols-2 lg:grid-cols-4 w-1/2 md:w-3/5 lg:w-11/12 mx-auto gap-10" style="max-width: 1150px;">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 w-1/2 md:w-3/5 lg:w-11/12 mx-auto gap-10" style="max-width: 1150px;">
                 
                         <a class=" border border-gray w-52 h-48  border rounded hover:shadow shadow-black" href="" style="max-width: 260px;">
                             <div class="flex w-full h-full flex-col justify-center items-center">

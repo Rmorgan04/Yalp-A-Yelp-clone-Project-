@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 #restaurant-dropdn, #home-dropdn, #auto-dropdn, #more-dropdn {
     display: none;
 }
@@ -57,9 +61,14 @@
     max-height: 1390px;
 }
 
+
 @media screen and (width < 768px) {
     #activity-section {
         max-height: 1370px;
+    }
+
+    #img-hero {
+        height: 680px;
     }
     
 }
